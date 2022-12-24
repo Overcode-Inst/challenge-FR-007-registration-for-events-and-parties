@@ -26,9 +26,9 @@ Ao completar, não esqueça de publicar no linkedin e adicionar #handsOnRoadmap
 
 <br />
 
-Imagine que foi pedido a você para fazer uma página de cadastro simples.
+Imagine que foi pedido a você para fazer uma página de cadastro, esse cadastro é para solicitar contato com uma empresa prestadora de serviços que montam festas e eventos.
 
-Nesse cadastro o objetivo é que se recolha dados das pessoas sobre que tipo de filmes e séries a pessoa gosta de assistir.
+Essa empresa presta serviços tanto para pessoas físicas quanto para pessoas jurídicas. E faz os mais variados eventos possíveis.
 <br />
 
 ## :dart: Os requisitos<a name="id01.2"></a>
@@ -42,22 +42,28 @@ Sua aplicação deve ter:
 <br />
 
 - Uma página de formulário que conste com os campos:
-  - nome completo
-  - idade
-  - sexo
-  - e-mail
-  - cpf
-  - gerêro preferido de filmes e/ou séries
-  - segundo genêro de preferência
-  - terceiro genêro de preferência
-  - Um campo de preferência com opções filmes curtos, filmes longos, mini séries e séries, em que só se pode escolher uma opção.
-- Ao concluir e confirmar com o botão o formulário some, e aparece no lugar uma mensagem de agradecimento.
-- Na parte da mensagem deve ter um botão para responder novamente a pesquisa, que retorna para a pesquisa com todos os campos zerados.
-- Os campos idade, sexo, e-mail e toda parte de pesquisa sobre conteúdo deve ser obrigatória.
-- Os campos de nome e cpf são opcionais.
+
+  - nome completo/Razão social
+  - tipo de evento ou festa. (aniversário, reunião de empresa/workshop, coffee and meet, outro)
+  - Quantidade estimada de pessoas (campo de mínimo e máximo)
+  - e-mail de contato
+  - cpf/cnpj
+  - Tema da festa
+  - idade da pessoa a queme a festa se destina, caso for um aniversário
+  - sexo, caso seja um aniversário
+  - Um campo como conheceu a empresa (dê um nome de sua escolha para a empresa).
+  - O campo descrito acima deve permitir a escolha de uma das opções entre recomendação, facebook, instagram, anúncio do google/youtube, outro.
+
+- Ao escolher outro em qualquer pergunta, deve ser possível específicar.
+- Ao concluir e confirmar com o botão o formulário some, e aparece no lugar uma mensagem que o pedido foi recebido.
+- Na parte da mensagem deve ter um botão para responder fazer novo pedido, que retorna para o formulário com todos os campos zerados.
+- Os campos nome completo/razão social, quantidade de pessoas, tipo de evento ou festa,e-mail de contato
+  ,cpf/cnpj e campo de como conheceeu a empresa são obrigatórios.
+- Os campos de idade e sexo se tornam obrigatórios caso o tipo dee festa seja aniversário.
+- Os demais campos são opcionais.
 - A página de agradecimento deve também mostrar as respostar anteriores, mas não como ampos de input, apenas mostrando as perguntas e respostas.
 
-#obs: nenhum dado deve ser realmente armazenado. Se acaso for armazenar dados busque sobre como tratar os dados sensíveis como cpf. Essa proposta é fictícia e só deve ter objetivo de treino.
+#obs: nenhum dado deve ser realmente armazenado. Se acaso for armazenar dados busque sobre como tratar os dados sensíveis tais como cpf. Essa proposta é fictícia e só deve ter objetivo de treino.
 
 ### :dart: Requisitos não funcionais <a name="id01.2.2"></a>
 
@@ -68,9 +74,9 @@ Sua aplicação deve ter:
 - ReactJs
 - fazer deploy
 - Usar formulários controlados do ReactJS.
-- Não utilização de formik, useForm ou qualquer outra forma de gerenciador de forms.
+- Utilização de formik ou useForm
+- O uso de yup.
 - A aplicação deve ter uma rota só, sendo a página de agradecimento apenas um componente que tem sua visualização condicionada.
-- O uso de yup é opcional.
 
 <br />
 
